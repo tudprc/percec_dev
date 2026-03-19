@@ -78,6 +78,17 @@ header {
 }
 .hero-text { display:flex; flex-direction:column; gap:6px; }
 .name { font-size:1.3rem; font-weight:600; letter-spacing:-.025em; line-height:1.15; }
+.name-link {
+  color:inherit; text-decoration:none;
+  transition:opacity .15s var(--ease);
+}
+.name-link:hover { opacity:.65; }
+.hero-email {
+  font-size:.72rem; color:var(--muted2); text-decoration:none;
+  letter-spacing:.005em; margin-top:1px;
+  transition:color .15s var(--ease);
+}
+.hero-email:hover { color:var(--accent); }
 .status-badge {
   display:inline-flex; align-items:center; gap:6px;
   font-size:.72rem; color:var(--muted); line-height:1; user-select:none;
@@ -354,11 +365,14 @@ footer {
     <header>
       <div class="hero-left">
         <div class="hero-text">
-          <h1 class="name">Tudor Percec</h1>
+          <h1 class="name">
+            <a href="https://linkedin.com/in/prctudor" target="_blank" rel="noopener" class="name-link">Tudor Percec</a>
+          </h1>
           <div class="status-badge">
             <span class="status-dot"></span>
             Available for opportunities
           </div>
+          <a href="mailto:tudorpercec@outlook.com" class="hero-email">tudorpercec@outlook.com</a>
         </div>
       </div>
       <nav class="nav">
@@ -631,9 +645,9 @@ footer {
         I&rsquo;m always open to interesting conversations.
       </p>
       <div class="contact-list" style="margin-top:2rem;">
-        <a href="mailto:percec@outlook.com" class="contact-row">
+        <a href="mailto:tudorpercec@outlook.com" class="contact-row">
           <span class="contact-label">Email</span>
-          <span class="contact-value">percec@outlook.com</span>
+          <span class="contact-value">tudorpercec@outlook.com</span>
           <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
           </svg>
